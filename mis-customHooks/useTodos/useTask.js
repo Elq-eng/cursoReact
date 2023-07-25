@@ -1,5 +1,5 @@
 import { useEffect, useReducer } from 'react';
-import { taskReducer } from '../09-useReducer/taskReducer';
+import { taskReducer } from './taskReducer';
 
 const init = () =>{
   return JSON.parse(localStorage.getItem('Task')) || []
