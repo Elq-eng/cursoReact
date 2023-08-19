@@ -50,7 +50,7 @@ describe('Pruebas  en el publicRoute', () => {
     </AuthContext.Provider>
      );
     
-          expect( screen.getByText('Pagina Marvel')).toBeTruthy()
+          expect( screen.getByText('Bienvedio a marvel')).toBeTruthy()
 
 
    })

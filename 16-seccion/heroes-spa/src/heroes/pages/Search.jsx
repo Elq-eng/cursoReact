@@ -38,7 +38,9 @@ export const Search = () => {
         <div className="col-5">
           <h4> Searching </h4>
           <hr />
-          <form onSubmit={ onSearchSubmit }>
+          <form 
+          aria-label='form'
+          onSubmit={ onSearchSubmit }>
             <input type="text"
             placeholder="Search a hero"
             className="form-control"
@@ -66,7 +68,9 @@ export const Search = () => {
           
           <div className="alert alert-primary" style={{ display: showSearch ? '' : 'none'}}> Search a hero</div>
 
-          <div className="alert alert-danger" style={{ display: showError ? '': 'none'}}>
+          <div 
+          aria-label='alert-danger'
+          className="alert alert-danger" style={{ display: showError ? '': 'none'}}>
             No  hero with <b> { q } </b></div>
           {
             heroes.map( hero => (
